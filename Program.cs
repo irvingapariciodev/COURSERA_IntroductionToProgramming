@@ -221,6 +221,10 @@ public class Program
                                 break;
 
                             case "10":
+                                CheckoutBook(users, library, MaxBorrowLimit);
+                                break;
+
+                            case "11":
                                 running = false;
                                 Console.WriteLine("Goodbye!\n");
                                 break;
@@ -607,4 +611,49 @@ public class Program
 
         Console.WriteLine($"\"{returnedBook}\" has been checked in successfully.");
     }
+
+    static void CheckoutBook(List<User> users, List<string> library, int maxLimit)
+    {
+        Console.Write("Enter user name: ");
+        string userName = Console.ReadLine();
+
+        User user = users.Find(u =>
+            u.Name.Equals(userName, StringComparison.OrdinalIgnoreCase));
+
+        if (user == null)
+        {
+            Console.WriteLine("User not found.");
+            return;
+        }
+
+        if (user.BorrowedBooks.Count >= maxLimit)
+        {
+            Console.WriteLine("Checkout limit reached.");
+            return;
+        }
+
+        if (library.Count == 0)
+        {
+            Console.WriteLine("No books available for checkout.");
+            return;
+        }
+
+        ShowBooks(library);
+        Console.Write("Select book number to checkout: ");
+
+        if (!int.TryParse(Console.ReadLine(), out int selection) ||
+            selection < 1 || selection > library.Count)
+        {
+            Console.WriteLine("Invalid selection.");
+            return;
+        }
+
+        string book = library[selection - 1];
+
+        library.RemoveAt(selection - 1);
+        user.BorrowedBooks.Add(book);
+
+        Console.WriteLine($"\"{book}\" has been checked out by {user.Name}.");
+    }
+
 }
