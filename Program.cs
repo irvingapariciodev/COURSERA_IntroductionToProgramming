@@ -232,10 +232,8 @@ public class Program
                     }
                     break;
                 /// <summary>
-                /// Library management system, allows to add, remove, show and search books for a user.
+                /// Sum numbers from 1 to 100 using a loop, it was generated with Copilot.
                 /// </summary>
-                /// <param name="users">Collection of registered users.</param>
-                /// <param name="library">Available books in the library.</param>
                 case 9:
                     Console.WriteLine($"You selected: {application9Name}");
                     int sum = 0;

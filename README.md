@@ -1,49 +1,31 @@
-﻿# COURSERA_IntroductionToProgramming
+﻿🚀 Async Programming & C# Practice
 
-Async Programming & C# Practice Menu
+Hands-on C# console exercises focused on asynchronous programming, data handling, and basic system design.
+Each menu option represents a small, isolated scenario you can run, modify, and extend.
 
-This repository contains a collection of C# console-based exercises focused on asynchronous programming, data handling, and basic system design. Each menu option represents a small, self-contained scenario designed for learning and practice.
+🧭 What’s Inside
 
-📋 Menu Options
+This project uses a menu-driven console application to demonstrate real-world async patterns and logic.
 
-Single Asynchronous Method
-Simulates a single asynchronous operation using async and await.
+📋 Menu Overview
+Option	Description
+1️ -Simulate a single asynchronous method using async / await
+2️ - Run multiple asynchronous methods concurrently
+3️ - Display a simulated product list asynchronously
+4️ - Load products and reviews using async operations
+5️ - Simulate delayed responses (network-like behavior)
+6️ - Validate user age input (generated with Copilot)
+7️ - Sort data and calculate averages (generated with Copilot)
+8️ - Library Management System – add, remove, show, search books
+9️ - Sum numbers from 1 to 100 using a loop.
+10 - Exit the application
 
-Multiple Asynchronous Methods
-Demonstrates running and coordinating multiple asynchronous methods.
+🎯 Learning Goals
 
-Asynchronous Product List
-Displays a simulated product list retrieved asynchronously.
-
-Asynchronous Products and Reviews
-Shows a simulated product list along with related reviews using asynchronous calls.
-
-Asynchronous Delay Simulation
-Simulates delayed responses to mimic real-world async operations.
-
-User Age Validation (Copilot Generated)
-Requests user age and validates whether it falls within a defined range.
-
-Sorting and Average Calculation (Copilot Generated)
-Sorts a simulated list, then calculates and displays the average value.
-
-Library Management System – Version 1
-Allows users to add, remove, show, and search books.
-
-Library Management System – Version 2
-Enhanced or alternative implementation of the library management system.
-
-Exit
-Closes the application.
-
-🎯 Purpose
-
-The goal of this project is to practice:
-
-Asynchronous programming with async / await
-
-Console application structure
-
-Basic data manipulation
-
-Incremental system design in C#
+•	Learn how to use async and await in real C# scenarios
+•	Understand how to run and coordinate multiple asynchronous tasks
+•	Practice structuring a clean, menu-driven console application
+•	Work with collections (lists, sorting, averages, searches)
+•	Implement basic user input validation and control flow
+•	Compare human-written code with AI-generated code (GitHub Copilot)
+•	Build confidence in designing small, self-contained features	
